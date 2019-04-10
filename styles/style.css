@@ -1,0 +1,647 @@
+/* https://www.deviantart.com/mucrush/art/Font-Pack-Sun-and-Moon-593304569 */
+@font-face {
+    font-family: "Pokemon";
+    src: url("../fonts/pokemon.ttf");
+}
+
+@font-face {
+    font-family: "Play";
+    src: url("../fonts/play.ttf");
+}
+
+
+body {
+  background-color: rgb(20, 21, 53);
+}
+
+ul.select2-choices {
+    /* padding-right: 30px !important; */
+    border-radius: 5px;
+}
+
+ul.select2-choices:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 5px solid #333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+li.select2-search-choice {
+  font-family: "Play";
+}
+
+.red {
+  color: rgb(139, 17, 17);
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.title-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.site-icon {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-image: url("../images/icon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.site-title {
+  font-family: "Pokemon";
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.site-title .red {
+  color: rgb(139, 17, 17);
+  -webkit-text-fill-color: rgb(139, 17, 17);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.site-title .black {
+  color: black;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.site-description {
+  font-family: "Play";
+  font-size: 20px;
+  color: white;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.filters-container {
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 80px;
+  background-color: rgb(139, 17, 17);
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+}
+
+.filters-title {
+  font-family: "Play";
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  line-height: 70px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 5px solid rgb(139, 17, 17);
+  box-sizing: border-box;
+}
+
+.generation-filter-title {
+  font-family: "Play";
+  font-size: 16px;
+  color: white;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgb(14, 14, 14);
+  border-top: 5px solid rgb(20, 21, 53);
+  box-sizing: border-box;
+  position: absolute;
+  left: 180px;
+  top: 0%;
+  text-align: center;
+}
+
+.generation-filter-container {
+  position: absolute;
+  left: 180px;
+  width: 300px;
+  height: 40px;
+  top: 35px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.filter-generation-select2 {
+  display: block;
+  width: 95%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.opponent-filter-title {
+  font-family: "Play";
+  font-size: 16px;
+  color: white;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgb(14, 14, 14);
+  border-top: 5px solid rgb(20, 21, 53);
+  box-sizing: border-box;
+  position: absolute;
+  left: 500px;
+  top: 0%;
+  text-align: center;
+}
+
+.opponent-filter-container {
+  position: absolute;
+  left: 500px;
+  width: 150px;
+  height: 40px;
+  top: 35px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+
+.legendary-filter-title {
+  font-family: "Play";
+  font-size: 16px;
+  color: white;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgb(14, 14, 14);
+  border-top: 5px solid rgb(20, 21, 53);
+  box-sizing: border-box;
+  position: absolute;
+  left: 670px;
+  top: 0%;
+  text-align: center;
+}
+
+.legendary-filter-container {
+  position: absolute;
+  left: 670px;
+  width: 150px;
+  height: 40px;
+  top: 35px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.playstyle-filter-title {
+  font-family: "Play";
+  font-size: 16px;
+  color: white;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgb(14, 14, 14);
+  border-top: 5px solid rgb(20, 21, 53);
+  box-sizing: border-box;
+  position: absolute;
+  left: 840px;
+  top: 0%;
+  text-align: center;
+}
+
+.playstyle-filter-container {
+  position: absolute;
+  left: 840px;
+  width: 150px;
+  height: 40px;
+  top: 35px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.filter-playstyle-select2 {
+  display: block;
+  width: 95%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Play";
+}
+
+.switch {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 34px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(20, 21, 53);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(20, 21, 53);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .filters-container {
+    height: 160px;
+  }
+
+  .playstyle-filter-title {
+    top: 78px;
+    left: 500px;
+    border-top: 5px solid rgb(139, 17, 17);
+  }
+
+  .playstyle-filter-container {
+    left: 500px;
+    top: 70%;
+  }
+
+  .filters-title {
+    height: 160px;
+    line-height: 150px;
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+  .generation-filter-title {
+    width: 150px;
+  }
+
+  .generation-filter-container {
+    height: 120px;
+    width: 150px;
+  }
+
+  .playstyle-filter-title {
+    left: 350px;
+  }
+
+  .playstyle-filter-container {
+    left: 350px;
+  }
+
+  .opponent-filter-title {
+    left: 350px;
+  }
+
+  .opponent-filter-container {
+    left: 350px;
+  }
+
+  .legendary-filter-title {
+    left: 520px;
+  }
+
+  .legendary-filter-container {
+    left: 520px;
+  }
+}
+
+.your-team-header {
+  width: 350px;
+  height: 60px;
+  font-family: "Play";
+  font-weight: bold;
+  color: rgb(139, 17, 17);
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+  background-color: rgb(14, 14, 14);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin: auto;
+}
+
+.your-team-container {
+  background-color: rgb(14, 14, 14);
+  width: 80%;
+  min-height: 400px;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.opponent-team-header {
+  width: 350px;
+  height: 60px;
+  font-family: "Play";
+  font-weight: bold;
+  color: rgb(139, 17, 17);
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+  background-color: rgb(14, 14, 14);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin: auto;
+}
+
+.opponent-team-container {
+  background-color: rgb(14, 14, 14);
+  width: 80%;
+  min-height: 400px;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.team-slot-container {
+  position: relative;
+  border: 5px dotted rgb(110, 110, 110);
+  box-sizing: border-box;
+  flex: 1;
+  min-width: 40%;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .your-team-container {
+    min-height: 800px;
+  }
+
+  .opponent-team-container {
+    min-height: 800px;
+  }
+  .team-slot-container {
+    min-width: 80%;
+  }
+}
+
+/* .select2-container .select2-choice {
+  height: 50px;
+} */
+
+.select-img {
+  width: 50px;
+  height: 50px;
+}
+
+.select-text {
+  display: inline-block;
+  line-height: 50px;
+  position: absolute;
+  font-family: "Play";
+}
+
+.add-pokemon-button {
+  transition: 0.3s all;
+  display: block;
+  width: 100%;
+  height: 80px;
+  font-family: "Play";
+  font-size: 20px;
+  color: rgba(110, 110, 110, 0.6);
+  text-align: center;
+  line-height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.add-pokemon-button:hover {
+  font-size: 24px;
+}
+
+.pokemon-select2 {
+  display: block;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon-select2 > .select2-choice {
+  height: 50px;
+}
+
+.pokemon-card-form {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.pokemon-card-img {
+  display: inline-block;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pokemon-card-name {
+  display: inline-block;
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  line-height: 100px;
+  font-family: "Play";
+  font-size: 20px;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pokemon-nature-label {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  font-family: "Play";
+  font-size: 16px;
+  left: 230px;
+  top: 25%;
+  transform: translateY(-30%);
+}
+
+.nature-select2 {
+  display: block;
+  width: 100px;
+  position: absolute;
+  left: 290px;
+  top: 25%;
+  transform: translateY(-50%);
+}
+
+.select2-results .select2-result-label {
+  font-family: "Play";
+}
+
+.nature-select2 > .select2-choice {
+  height: 20px;
+  font-family: "Play";
+}
+
+.pokemon-moveset-label {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  font-family: "Play";
+  font-size: 16px;
+  left: 220px;
+  top: 65%;
+  transform: translateY(-30%);
+}
+
+.moveset-select2 {
+  display: block;
+  width: 250px;
+  position: absolute;
+  left: 290px;
+  top: 65%;
+  transform: translateY(-50%);
+}
+
+.select2-results .select2-result-label {
+  font-family: "Play";
+}
+
+.moveset-select2 > .select2-choice {
+  height: 20px;
+  font-family: "Play";
+}
+
+.remove-pokemon-button {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  right: 0px;
+  top: 0px;
+  background-color: rgb(139, 17, 17);
+  font-family: "Play";
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.generate-recommendations-button {
+  transition: 0.3s all;
+  width: 350px;
+  height: 60px;
+  background-color: rgb(139, 17, 17);
+  margin: auto;
+  margin-bottom: 40px;
+  font-family: "Play";
+  font-size: 20px;
+  line-height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  -webkit-box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.75);
+}
+
+.generate-recommendations-button:hover {
+  transform: translateY(-4px);
+  -webkit-box-shadow: 0px 8px 14px 1px rgba(255,255,255,0.75);
+  -moz-box-shadow: 0px 8px 14px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 8px 14px 1px rgba(255,255,255,0.75);
+}
